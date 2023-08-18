@@ -17,7 +17,6 @@ namespace BookStore.DataAccess.Repositories.Generic_Repository
         {
             this._context = context;
             this._dbSet = _context.Set<T>();
-            _context.Products.Include(u => u.Category);
         }
         public void Add(T entity)
         {
