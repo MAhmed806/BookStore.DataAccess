@@ -14,7 +14,8 @@ namespace BookStore.DataAccess.Repositories.Company_Repository
         }
         public void Update(Company company)
         {
-            throw new NotImplementedException();
+            _context.Update(company);
+
         }
     }
 }
