@@ -1,5 +1,7 @@
-﻿using BookStore.DataAccess.Repositories.Category_Repository;
-using BookStore.DataAccess.Repositories.Company_Repository;  
+﻿using BookStore.DataAccess.Repositories.Application_User_Repository;
+using BookStore.DataAccess.Repositories.Category_Repository;
+using BookStore.DataAccess.Repositories.Company_Repository;
+using BookStore.DataAccess.Repositories.Shopping_Cart_Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +15,8 @@ namespace BookStore.DataAccess.Repositories.Unit_of_Work
         IProductRepository Product { get; }
         ICategoryRepository Category { get; }
         ICompanyRepository Company { get; }
+        IShoppingCartRepository ShoppingCart { get; }
+        IApplicationUserRepository ApplicationUserRepository { get; }
         void Save();
 
     }
