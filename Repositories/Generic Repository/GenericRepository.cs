@@ -1,4 +1,4 @@
-﻿using BookStore.Data;
+﻿using BookStore.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

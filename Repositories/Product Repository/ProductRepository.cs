@@ -1,7 +1,6 @@
-﻿using BookStore.Data;
+﻿using BookStore.DataAccess.Data;
 using BookStore.DataAccess.Repositories.Generic_Repository;
 using BookStore.Models.Models;
-
 
 namespace BookStore.DataAccess.Repositories.Category_Repository
 {

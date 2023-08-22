@@ -1,4 +1,4 @@
-﻿using BookStore.Data;
+﻿using BookStore.DataAccess.Data;
 using BookStore.DataAccess.Repositories.Category_Repository;
 using BookStore.DataAccess.Repositories.Company_Repository;
 using System;

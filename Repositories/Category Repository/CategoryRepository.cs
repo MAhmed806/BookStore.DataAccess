@@ -1,4 +1,4 @@
-﻿using BookStore.Data;
+﻿using BookStore.DataAccess.Data;
 using BookStore.DataAccess.Repositories.Generic_Repository;
 using BookStore.Models.Models;
 
