@@ -23,9 +23,17 @@ namespace BookStore.DataAccess.Repositories.Generic_Repository
             _dbSet.Add(entity);
         }
 
-        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)
         {
-            IQueryable<T> query = _dbSet.AsQueryable();
+            IQueryable<T> query;
+            if (tracked)
+            {
+               query = _dbSet.AsQueryable();
+            }
+            else
+            {
+                query = _dbSet.AsQueryable().AsNoTracking();
+            }
             if (!string.IsNullOrEmpty(includeProperties))
             {
                 foreach (var property in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
@@ -36,6 +44,7 @@ namespace BookStore.DataAccess.Repositories.Generic_Repository
             }
             query = query.Where(filter);
             return query.FirstOrDefault();
+
         }
         //Category,CoverType
         public IEnumerable<T> GetAll(string? includeProperties = null)

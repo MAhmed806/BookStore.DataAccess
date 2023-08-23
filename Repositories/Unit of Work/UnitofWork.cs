@@ -19,6 +19,8 @@ namespace BookStore.DataAccess.Repositories.Unit_of_Work
         public IShoppingCartRepository ShoppingCart { get; private set;}
         public IApplicationUserRepository ApplicationUser { get; private set;}
 
+        public IApplicationUserRepository ApplicationUserRepository => throw new NotImplementedException();
+
         private ApplicationDbContext _context;
         public UnitofWork(ApplicationDbContext context)
         {
