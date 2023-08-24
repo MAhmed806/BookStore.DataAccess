@@ -2,7 +2,7 @@
 using BookStore.DataAccess.Repositories.Generic_Repository;
 using BookStore.Models.Models;
 
-namespace BookStore.DataAccess.Repositories.Category_Repository
+namespace BookStore.DataAccess.Repositories.Product_Repository
 {
     public class ProductRepository : GenericRepository<Product>, IProductRepository
     {

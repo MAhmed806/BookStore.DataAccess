@@ -47,9 +47,13 @@ namespace BookStore.DataAccess.Repositories.Generic_Repository
 
         }
         //Category,CoverType
-        public IEnumerable<T> GetAll(string? includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter,string? includeProperties = null)
         {
             IQueryable<T> query = _dbSet.AsQueryable();
+            if(filter != null)
+            {
+                query= query.Where(filter);
+            }
             if (!string.IsNullOrEmpty(includeProperties))
             {
                 foreach (var property in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))

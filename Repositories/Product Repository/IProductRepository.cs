@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookStore.DataAccess.Repositories.Category_Repository
+namespace BookStore.DataAccess.Repositories.Product_Repository
 {
     public interface IProductRepository:IGenericRepository<Product>
     {
