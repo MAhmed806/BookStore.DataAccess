@@ -34,6 +34,15 @@ namespace BookStore.DataAccess.Repositories.OrderDetail_Repository
         public void UpdateStripePaymentId(int id, string sessionid, string paymentintentid)
         {
             var orderfromdb = _context.OrderHeaders.FirstOrDefault(x => x.Id == id);
+            if(!string.IsNullOrEmpty(sessionid))
+            {
+                orderfromdb.SessionId= sessionid;
+            }
+            if (!string.IsNullOrEmpty(paymentintentid))
+            {
+                orderfromdb.PaymentIntentId = paymentintentid;
+                orderfromdb.PaymentDate= DateTime.Now;
+            }
         }
     }
 }
