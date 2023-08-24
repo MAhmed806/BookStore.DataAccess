@@ -12,7 +12,6 @@ namespace BookStore.DataAccess.Repositories.OrderDetail_Repository
         {
             _context = context;
         }
-
         public void Update(OrderHeader OrderHeader)
         {
             _context.Update(OrderHeader);

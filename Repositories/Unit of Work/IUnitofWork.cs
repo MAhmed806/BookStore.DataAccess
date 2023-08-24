@@ -19,7 +19,7 @@ namespace BookStore.DataAccess.Repositories.Unit_of_Work
         ICategoryRepository Category { get; }
         ICompanyRepository Company { get; }
         IShoppingCartRepository ShoppingCart { get; }
-        IApplicationUserRepository ApplicationUserRepository { get; }
+        IApplicationUserRepository ApplicationUser { get; }
         IOrderDetailRepository OrderDetail { get; }
         IOrderHeaderRepository OrderHeader { get; }
         void Save();
