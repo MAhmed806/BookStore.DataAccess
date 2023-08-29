@@ -15,3 +15,5 @@ C:\Users\Ahmed\source\repos\BookStore.DataAccess\obj\Debug\net6.0\refint\BookSto
 C:\Users\Ahmed\source\repos\BookStore.DataAccess\obj\Debug\net6.0\BookStore.DataAccess.pdb
 C:\Users\Ahmed\source\repos\BookStore.DataAccess\obj\Debug\net6.0\BookStore.DataAccess.genruntimeconfig.cache
 C:\Users\Ahmed\source\repos\BookStore.DataAccess\obj\Debug\net6.0\ref\BookStore.DataAccess.dll
+C:\Users\Ahmed\source\repos\BookStore.DataAccess\bin\Debug\net6.0\BookStore.Utility.dll
+C:\Users\Ahmed\source\repos\BookStore.DataAccess\bin\Debug\net6.0\BookStore.Utility.pdb

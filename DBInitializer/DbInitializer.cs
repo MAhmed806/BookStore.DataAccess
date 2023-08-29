@@ -3,11 +3,6 @@ using BookStore.Models.Models;
 using BookStore.Utility;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookStore.DataAccess.DBInitializer
 {
@@ -21,9 +16,9 @@ namespace BookStore.DataAccess.DBInitializer
             _userManager = usermanager;
             _roleManager = rolemanager;
             _context = context;
-            
+
         }
-        public void  Initialize()
+        public void Initialize()
         {
             //migrations if they are not applied
             try
@@ -66,10 +61,5 @@ namespace BookStore.DataAccess.DBInitializer
             }
             return;
         }
-           
-           
-
-            
-        
     }
 }

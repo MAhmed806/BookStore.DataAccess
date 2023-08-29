@@ -8,5 +8,7 @@ namespace BookStore.DataAccess.DBInitializer
 {
     public interface IDbInitializer
     {
+        void Initialize();
+
     }
 }
