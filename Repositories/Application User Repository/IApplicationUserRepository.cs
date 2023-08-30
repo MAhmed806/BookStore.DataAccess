@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace BookStore.DataAccess.Repositories.Application_User_Repository
 {
-    public interface IApplicationUserRepository:IGenericRepository<ApplicationUser>
+    public interface IApplicationUserRepository : IGenericRepository<ApplicationUser>
     {
+        public void Update(ApplicationUser applicationUser);
     }
 }

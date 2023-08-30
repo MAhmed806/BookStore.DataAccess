@@ -11,10 +11,14 @@ namespace BookStore.DataAccess.Repositories.Application_User_Repository
 {
     public class ApplicationUserRepository : GenericRepository<ApplicationUser>, IApplicationUserRepository
     {
-        private readonly ApplicationDbContext _context;
-        public ApplicationUserRepository(ApplicationDbContext context) : base(context)
+        private ApplicationDbContext _db;
+        public ApplicationUserRepository(ApplicationDbContext db) : base(db)
         {
-            _context = context;
+            _db = db;
+        }
+        public void Update(ApplicationUser applicationUser)
+        {
+            _db.ApplicationUsers.Update(applicationUser);
         }
     }
 }
