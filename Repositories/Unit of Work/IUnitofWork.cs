@@ -3,6 +3,7 @@ using BookStore.DataAccess.Repositories.Category_Repository;
 using BookStore.DataAccess.Repositories.Company_Repository;
 using BookStore.DataAccess.Repositories.OrderDetail_Repository;
 using BookStore.DataAccess.Repositories.OrderHeader_Repository;
+using BookStore.DataAccess.Repositories.Product_Image_Repository;
 using BookStore.DataAccess.Repositories.Product_Repository;
 using BookStore.DataAccess.Repositories.Shopping_Cart_Repository;
 using System;
@@ -22,6 +23,7 @@ namespace BookStore.DataAccess.Repositories.Unit_of_Work
         IApplicationUserRepository ApplicationUser { get; }
         IOrderDetailRepository OrderDetail { get; }
         IOrderHeaderRepository OrderHeader { get; }
+        IProductImageRepository ProductImage { get; }
         void Save();
 
     }
