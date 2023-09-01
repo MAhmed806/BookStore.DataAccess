@@ -192,7 +192,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Ahmed\\source\\repos\\BookStore.Models\\BookStore.Models.csproj": {
+                "projectPath": "C:\\Users\\Ahmed\\source\\repos\\BookStore.Models\\BookStore.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -205,9 +209,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[6.0.21, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             }
           },
           "imports": [
